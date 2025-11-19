@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Taxi Service Theme - Yellow + Black + White */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 4%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 4%;
+
+    /* Taxi Yellow Primary */
+    --primary: 45 98% 53%;
+    --primary-foreground: 0 0% 4%;
+    
+    /* Deep Black Secondary */
+    --secondary: 0 0% 4%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+
+    /* Accent Yellow variations */
+    --accent: 43 96% 56%;
+    --accent-foreground: 0 0% 4%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 45 98% 53%;
+
+    --radius: 0.5rem;
+
+    /* Custom Taxi Theme Colors */
+    --taxi-yellow: 45 98% 53%;
+    --taxi-yellow-light: 48 100% 88%;
+    --taxi-black: 0 0% 4%;
+    --taxi-gray: 0 0% 45%;
+    
+    /* Gradients */
+    --gradient-yellow: linear-gradient(135deg, hsl(45 98% 53%), hsl(38 92% 50%));
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 4%), hsl(0 0% 15%));
+    
+    /* Shadows */
+    --shadow-yellow: 0 10px 40px -10px hsl(45 98% 53% / 0.4);
+    --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.1);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 45 98% 53%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 43 96% 56%;
+    --accent-foreground: 0 0% 4%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 45 98% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@media (min-width: 768px){
+  .animate-slide-in-right {
+    /* margin-right: -15px; */
+  }
+}
