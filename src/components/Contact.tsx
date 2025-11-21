@@ -63,7 +63,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Service Areas</h3>
                     <p className="text-muted-foreground">
-                      Mumbai, Delhi, Bangalore, Pune, Hyderabad and 50+ cities across India
+                      Mumbai, Delhi, Indore, Bangalore, Pune, Hyderabad and 50+ cities across India
                     </p>
                   </div>
                 </div>

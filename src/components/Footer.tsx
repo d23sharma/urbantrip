@@ -64,7 +64,7 @@ const Footer = () => {
             <p className="text-sm text-white/70">
               © {currentYear} UrbanTrip Cabs. All rights reserved.
             </p>
-
+            <div className="gradient-test"></div>
             <div className="flex items-center gap-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                 <Facebook className="w-5 h-5" />
